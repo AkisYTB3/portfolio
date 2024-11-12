@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="left">
+                <h1>Richard Mikloš</h1>
+                <span class="location"><i class="fa-solid fa-map-pin"></i> Záhorská Ves, Slovakia</span>
+            </div>
+            <div class="right">
+                <a href="mailto:YeahAkis@proton.me"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.instagram.com/yeahakis/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/YeahAkis_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/AkisYTB3" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class="about-section">
+            <h2>About</h2>
+            <div class="about-text">I'm a <span id="age" title="30th Jan 2008"></span> year old </div>
+        </div>
+    </header>
+
+
+
+
+    <script defer>
+        function calcAge(bY, bM, bD) {
+            const today = new Date();
+            let age = today.getFullYear() - bY;
+            if (today.getMonth() < bM || (today.getMonth() === bM && today.getDate() < bD)) { age--; }
+            return age;
+        }
+        document.getElementById('age').innerText = calcAge(2008, 0, 30);
+    </script>
+</body>
+</html>
