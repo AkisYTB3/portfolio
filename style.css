@@ -2,7 +2,8 @@
 
 :root {
     --primary-text: aliceblue;
-    --secondary-text: #a0a0a0;
+    --secondary-text: #d3d3d3;
+    --tertiary-text: #a0a0a0;
 }
 
 
@@ -57,6 +58,10 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    text-align: center;
+}
+
 a {
     color: var(--secondary-text);
     text-decoration: none;
@@ -69,21 +74,35 @@ a:hover {
 }
 
 .location {
-    color: var(--secondary-text);
+    color: var(--tertiary-text);
     font-size: 0.8rem;
 }
 
-.about-text {
-    color: var(--secondary-text);
+.smaller-text {
+    color: var(--tertiary-text);
     font-size: 1rem;
     width: 80%;
     padding-top: 1rem;
 }
 
-.about-section {
+.medium-text {
+    color: var(--secondary-text);
+    font-size: 1.2rem;
+    width: 80%;
+    padding-top: 1rem;
+}
+
+.section {
     padding: 1rem;
 }
 
+.code-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+}
 
 
 
@@ -100,11 +119,15 @@ a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .about-section {
+    .section {
         text-align: center;
     }
 
-    .about-text {
+    .smaller-text {
+        width: 100%;
+    }
+
+    .medium-text {
         width: 100%;
     }
 }
