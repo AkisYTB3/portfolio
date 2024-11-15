@@ -16,10 +16,11 @@
 body {
     background-color: #181B28;
     background-image: url(res/background.webp);
+    background-attachment: fixed;
     font-family: "Inter", sans-serif;
     color: var(--primary-text);
     display: flex;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     justify-content: center;
 }
@@ -104,7 +105,51 @@ a:hover {
     font-size: 2.5rem;
 }
 
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+    justify-content: center;
+}
 
+.project-icon {
+    max-width: 100%;
+}
+
+.project-card {
+    background-color: #181B28;
+    border-radius: 20px;
+    overflow: hidden;
+    border: rgba(0, 0, 0, 0) 3px solid;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-info {
+    padding: 5%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a {
+    transition: all 0.2s ease-in-out;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.links a:hover {
+    background-color: #ffffff33;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    background-color: #1f2230;
+    border: white 3px solid;
+    transition: all 0.2s ease-in-out;
+}
 
 
 
